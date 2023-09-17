@@ -1,0 +1,22 @@
+// Declare and initialize the variables for exercise 1 here:
+let shuttlename = "Determination";
+let shuttlespeedmph = 17500;
+let DistancetoMarskm = 250000000;
+let DistancetoMoonkm = 384400;
+const MilesperKilometer = 0.621;
+
+console.log(typeof shuttlename);
+console.log(typeof shuttlespeedmph);
+console.log(typeof DistancetoMarskm);
+console.log(typeof DistancetoMoonkm);
+console.log(typeof MilesperKilometer);
+
+let milesTomars = DistancetoMarskm * MilesperKilometer;
+let hoursTomars = milesTomars / shuttlespeedmph;
+let daysTomars = hoursTomars / 24;
+console.log(shuttlename + " will take " + daysTomars + " days to reach the Moon. ");
+
+let milesTomoon = DistancetoMoonkm * MilesperKilometer;
+let hoursTomoon = milesTomoon / shuttlespeedmph;
+let daysTomoon = hoursTomoon/ 24; 
+console.log(shuttlename + " will take " + daysTomoon + " days to reach the Moon. ");
